@@ -1,0 +1,84 @@
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobileNumber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/FirstName"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="FirstName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="206dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="200dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FirstName" />
+
+    <TextView
+        android:id="@+id/Registerheader"
+        android:layout_width="220dp"
+        android:layout_height="52dp"
+        android:text="Registrationpage"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        tools:layout_editor_absoluteX="77dp" />
+
+    <EditText
+        android:id="@+id/Mobilenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="MobileNumber"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="408dp" />
+
+    <EditText
+        android:id="@+id/PostalAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Postal Address"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBottom_toTopOf="@+id/Mobilenumber"
+        app:layout_constraintTop_toBottomOf="@+id/Registerheader"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="77dp" />
+
+    <Button
+        android:id="@+id/submitbutton"
+        android:layout_width="141dp"
+        android:layout_height="49dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        app:layout_constraintVertical_bias="0.516"
+        tools:layout_editor_absoluteX="211dp" />
+
+</android.support.constraint.ConstraintLayout>
